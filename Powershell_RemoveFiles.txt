@@ -1,0 +1,3 @@
+$files = Get-Content "[Your path]\YOLOv7_Custom\yolov7-custom\runs\detect\exp\labels\Detections.txt";
+$location = "[Your path]\YOLOv7_Custom\yolov7-custom\runs\detect\exp";
+Get-ChildItem -Recurse $location -File -Exclude $files | Remove-Item;
